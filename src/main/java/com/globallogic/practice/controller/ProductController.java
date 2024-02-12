@@ -23,7 +23,6 @@ public class ProductController {
 
 	@Autowired
 	ProductService productService;
-
 	
 	@GetMapping("/message")
 	public String getmessage(){
