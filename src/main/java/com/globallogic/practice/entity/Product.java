@@ -1,5 +1,6 @@
 package com.globallogic.practice.entity;
 
+import ch.qos.logback.classic.db.names.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 public class Product {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue
 	private int id;
 	private String name;
 	private String category;
